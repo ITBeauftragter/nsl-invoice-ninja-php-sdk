@@ -15,7 +15,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "InvoiceNinja\\": "src/NSLInvoice/"
+            "NSLInvoice\\": "src/NSLInvoice/"
         }
     },
     "require": {}
