@@ -1,0 +1,22 @@
+{
+    "name": "itbeaufragter/nsl-invoice-ninja-php-sdk",
+    "description": "PHP SDK um Invoice - Ninja - Rechnungen zu erstellen",
+    "keywords": [
+        "invoice"
+    ],
+    "homepage": "https://www.neusser-schuetzenlust.de",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Lucas",
+            "email": "daniel.lucas@neusser-schuetzenlust.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "InvoiceNinja\\": "src/NSLInvoice/"
+        }
+    },
+    "require": {}
+}
