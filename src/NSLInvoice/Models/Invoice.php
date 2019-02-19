@@ -5,7 +5,7 @@ use stdClass;
 class Invoice extends AbstractModel
 {
     public static $route = 'invoices';
-    public static $include = 'invitations';
+    //public static $include = 'invitations';
 
     public $invoice_items = [];
     public $invitations = [];
@@ -15,13 +15,14 @@ class Invoice extends AbstractModel
 
     }
 
-    public function addInvoiceItem($product_key, $notes, $cost, $qty = 1)
+    public function addInvoiceItem($product_key, $notes, $cost, $qty = 1, $empfaenger = "")
     {
         $item = new stdClass();
         $item->product_key = $product_key;
         $item->notes = $notes;
         $item->cost = $cost;
         $item->qty = $qty;
+        $item->custom_value1 = $empfaenger;
 
         $this->invoice_items[] = $item;
     }
