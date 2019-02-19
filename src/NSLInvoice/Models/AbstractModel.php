@@ -183,7 +183,8 @@ class AbstractModel
             if ($json && property_exists($json, 'data')) {
                 return $json->data;
             } else {
-                throw new Exception($response);
+                //throw new Exception($response);
+                throw new \yii\web\HttpException(412, $response);
             }
         }
     }
